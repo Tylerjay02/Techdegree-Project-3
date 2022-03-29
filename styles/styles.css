@@ -95,6 +95,10 @@ input[type="text"], input[type="password"], input[type="email"], input[type="tel
   padding: 5px;
 }
 
+input:focus {
+  background-color: #F1F1FA;
+}
+
 #state {
   width: 100%;
   color: #a7a7a7;
