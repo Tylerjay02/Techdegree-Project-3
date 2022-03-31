@@ -57,10 +57,6 @@ p, label {
   font-size: 14.3px;
 }
 
-.newsletter-p {
-  margin-top: 9px;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -81,9 +77,22 @@ html {
 
 /* Form Styles */
 
+
+
+
 form {
   text-align: left;
 
+}
+
+.header-div p {
+  margin-top: 11px;
+}
+.header-div h2 {
+  margin-bottom: 0px;
+}
+.header-div {
+  margin-bottom: 35px;
 }
 
 fieldset {
@@ -146,6 +155,10 @@ textarea:focus {
 
 /* Newsletter styles */
 
+.newsletter-p {
+  margin-top: 9px;
+}
+
 .newsletter-h2 {
   margin-bottom: 1px;
 }
@@ -155,9 +168,13 @@ textarea:focus {
 }
 
 textarea {
-  height: 96px;
+  height: 84px;
   resize: none;
   margin-top: 26px;
+}
+
+.textarea-container {
+  margin-top: 11px;
 }
 
 /* Button Styles */
@@ -195,6 +212,15 @@ footer p {
     margin: 33px auto;
   }
 
+  .header-div p {
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
+
+  .header-div h2 {
+    margin-bottom: 7px;
+  }
+
 h2 {
   font-size: 1.6em;
 }
@@ -216,10 +242,21 @@ fieldset {
     margin-top: 10px;
     margin-bottom: 10px;
  }
+  .label-and-input:last-of-type {
+    margin-bottom: 27px;
+  }
+
  #zip {
     width: 150px;
     margin-right: auto;
-    margin-left: 64px;
-    margin-bottom: 40px;
+    margin-left: 68px;
    }
+
+   .newsletter-p {
+     margin-top: 9px;
+   }
+
+.textarea-container {
+  margin-top: 12px;
+}
 }
