@@ -4,10 +4,11 @@
    margin: 0;
    text-align: center;
    font-family: 'Readex Pro', sans-serif;
+   overflow-x: hidden;
  }
 
  section {
-   padding: 15px;
+   padding: 10px 15px;
 }
 
 .line {
@@ -19,7 +20,7 @@
 .line_2 {
   height: 2px;
   background: black;
-  margin-top: 10px;
+  margin: 12px 0 7px 0;;
 }
 
 .big-line {
@@ -37,19 +38,27 @@ h2 {
   font-size: 1.2em;
 }
 
-legend {
-  font-size: 20px;
+.legend_1 {
+  font-size: 19px;
   font-weight: bold;
-  padding: 28px 0;
+  padding: 19px 0;
+  margin:
+}
+
+legend {
+  font-size: 19px;
+  font-weight: bold;
+  padding: 19px 0;
+  margin:
 }
 
 p, label {
   color: #808080;
-  font-size: 15px;
+  font-size: 14.3px;
 }
 
 .newsletter-p {
-  margin-top: 0;
+  margin-top: 9px;
 }
 
 html {
@@ -63,7 +72,7 @@ html {
 
   .main-header {
     background: #2b2f46;
-    padding: 11px 1px;
+    padding: 12px 1px;
     }
 
   .main-header h1 {
@@ -98,7 +107,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="tel
   width: 100%;
   height: 50px;
   border-radius: 5px;
-  margin: 15px 0 20px 0;
+  margin: 15px 0 12px 0;
   padding: 5px;
 }
 
@@ -112,13 +121,16 @@ input[type="email"]::placeholder {
 input:focus {
   background-color: #F1F1FA;
   transition: all 1s ease-out;
+  outline: 1px solid black;
 }
 select:focus {
   background-color: #F1F1FA;
+  outline: 1px solid black;
   transition: all 1s ease-out;
 }
 textarea:focus {
   background-color: #F1F1FA;
+  outline: 1px solid black;
   transition: all 1s ease-out;
 }
 
@@ -145,6 +157,7 @@ textarea:focus {
 textarea {
   height: 96px;
   resize: none;
+  margin-top: 26px;
 }
 
 /* Button Styles */
@@ -154,7 +167,7 @@ button {
   width: 100%;
   border-radius: 5px;
   border: none;
-  margin-top: 10px;
+  margin-top: 20px;
   background: #41c3ab;
   font-size: 1.2em;
   color: white;
@@ -174,25 +187,39 @@ footer p {
   font-style: italic;
 }
 
+/* MEdia Screen Sizes */
 
 @media screen and (min-width: 768px) {
   section {
     max-width: 630px;
-    margin: auto;
+    margin: 33px auto;
   }
 
+h2 {
+  font-size: 1.6em;
+}
   .label-and-input {
     display: flex;
     align-items: center;
     white-space: nowrap;
   }
+  form {
+    margin-top: 23px;
+  }
+
+fieldset {
+  margin-top: 23px;
+}
   input[type="text"], input[type="password"], input[type="email"], input[type="tel"], select, #state {
     width: 450px;
     margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
  }
  #zip {
     width: 150px;
     margin-right: auto;
     margin-left: 64px;
+    margin-bottom: 40px;
    }
 }

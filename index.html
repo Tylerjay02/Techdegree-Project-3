@@ -9,6 +9,26 @@
    <title>Techdegree Project 3 - The Code Review</title>
  </head>
  <body>
+
+   <img src="mockups/mobile-form.png" style="
+    position: absolute;
+    z-index: 10000;
+    margin: auto;
+    left: 0;
+    right: 0;
+    opacity: -0.5;
+    pointer-events: none;
+">
+
+<img src="mockups/desktop-form.png" style="
+ position: absolute;
+ z-index: 10000;
+ margin: auto;
+ left: 0;
+ right: 0;
+ opacity: -0.5;
+ pointer-events: none;
+">
   <header>
     <div class="main-header">
      <h1>THE CODE REVIEW</h1>
@@ -25,7 +45,7 @@
     </div>
     <form>
      <fieldset>
-      <legend>Contact Information</legend>
+      <legend class="legend_1">Contact Information</legend>
       <div class="label-and-input">
         <label for="name">Full Name</label>
         <input required type="text" id="name" name="name" placeholder="Required"><br>
@@ -120,13 +140,13 @@
         <label for="cssnews">CSS News</label><br>
         <input id="javanews" type="checkbox" name="letter">
         <label for="javanews">Javascript News</label><br>
-        <p>Newsletter format</p>
+        <p class="newsletter-p">Newsletter format</p>
         <input id="htmlformat" type="radio" name="letterformat">
         <label for="htmlformat">HTML</label><br>
         <input id="textformat" type="radio" name="letterformat">
         <label for="textformat">Plain text</label><br>
         <label for="other_topics">Other topics you'd like to hear about</label>
-        <textarea name="other_topics"></textarea><br>
+        <textarea name="other_topics" id="text_area" name="textarea"></textarea><br>
     </fieldset>
     <button type="submit">Sign Up</button>
     </form>
