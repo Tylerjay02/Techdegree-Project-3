@@ -28,28 +28,28 @@
       <legend>Contact Information</legend>
       <div class="label-and-input">
         <label for="name">Full Name</label>
-        <input required type="text" id="name" name="user_name" placeholder="Required"><br>
+        <input required type="text" id="name" name="name" placeholder="Required"><br>
       </div>
       <div class="label-and-input">
         <label for="mail">Email Address</label>
-        <input required type="email" id="mail" name="user_email" placeholder="Required">
+        <input required type="email" id="mail" name="email" placeholder="Required">
       </div>
       <div class="label-and-input">
         <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="user_phone">
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
       </div>
       <div class="label-and-input">
         <label for="address">Street Address</label>
-        <input required type="text" id="address" name="user_address">
+        <input required type="text" id="address" name="address">
       </div>
       <div class="label-and-input">
         <label for="city">City</label>
-        <input required type="text" id="city" name="user_city">
+        <input required type="text" id="city" name="city">
       </div>
       <div class="label-and-input">
         <label for="state">State</label>
-         <select required id="state" name="user_state">
-          <option value="">Select State</option>
+         <select required id="state" name="state">
+          <option value="">Choose State</option>
           <option value="state-alabama">Alabama</option>
           <option value="state-alaska">Alaska</option>
           <option value="state-arizona">Arizona</option>
@@ -105,11 +105,11 @@
       </div>
       <div class="label-and-input">
         <label for="zip">Zip Code</label><br>
-        <input required  type="text" id="zip" name="user_zip">
+        <input required  type="text" id="zip" name="zip">
       </div>
       </fieldset>
 
-      <div class="line">
+      <div class="line_2">
       </div>
         <fieldset>
         <legend>Newsletter</legend>
@@ -120,15 +120,15 @@
         <label for="cssnews">CSS News</label><br>
         <input id="javanews" type="checkbox" name="letter">
         <label for="javanews">Javascript News</label><br>
-        <p>Newsletter format</p><br>
+        <p>Newsletter format</p>
         <input id="htmlformat" type="radio" name="letterformat">
         <label for="htmlformat">HTML</label><br>
         <input id="textformat" type="radio" name="letterformat">
         <label for="textformat">Plain text</label><br>
-        <p>Other topics you'd like to hear about</p>
+        <label for="other_topics">Other topics you'd like to hear about</label>
         <textarea name="other_topics"></textarea><br>
-     <button type="submit">Sign Up</button>
     </fieldset>
+    <button type="submit">Sign Up</button>
     </form>
   </section>
   <footer>

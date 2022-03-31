@@ -16,6 +16,12 @@
   margin: 5px 0;
 }
 
+.line_2 {
+  height: 2px;
+  background: black;
+  margin-top: 10px;
+}
+
 .big-line {
   height: 4px;
   background: black;
@@ -96,8 +102,24 @@ input[type="text"], input[type="password"], input[type="email"], input[type="tel
   padding: 5px;
 }
 
+input[type="text"]::placeholder {
+       text-align: right;
+     }
+input[type="email"]::placeholder {
+       text-align: right;
+    }
+
 input:focus {
   background-color: #F1F1FA;
+  transition: all 1s ease-out;
+}
+select:focus {
+  background-color: #F1F1FA;
+  transition: all 1s ease-out;
+}
+textarea:focus {
+  background-color: #F1F1FA;
+  transition: all 1s ease-out;
 }
 
 #state {
